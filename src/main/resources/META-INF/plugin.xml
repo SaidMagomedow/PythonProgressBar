@@ -1,0 +1,26 @@
+<idea-plugin>
+  <id>just.said.intellij.plugins.PythonProgressBar</id>
+  <name>Python Progress Bar</name>
+  <vendor email="saidmagomeng@gmail.com">Said Magomedov</vendor>
+
+  <description><![CDATA[
+    This plugin is based on the <a href="https://plugins.jetbrains.com/plugin/8575-nyan-progress-bar">Nyan Progress Bar plugin</a> from Dmitry Batkovich.
+    ]]>
+  </description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <applicationListeners>
+    <listener class="just.said.intellij.plugins.Python.PythonApplicationComponent" topic="com.intellij.ide.ui.LafManagerListenerr"/>
+  </applicationListeners>
+</idea-plugin>
